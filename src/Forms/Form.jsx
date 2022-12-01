@@ -1,4 +1,4 @@
-import formLogo from "../img/Logo1.png";
+import formLogo from "../img/Logo.png";
 import "./Form.css";
 
 function Form({ children }) {

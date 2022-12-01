@@ -5,9 +5,11 @@
   margin: 0;
 }
 .form-Log-In {
+  margin: 20px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 }
 .form-Log-In img {
   margin-top: 5%;
@@ -29,7 +31,8 @@
   border: none;
   background: #06283d;
   padding: 5px;
-  filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.38));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.38));
+  border-radius: 5px;
 }
 .sign-up-button{
   width: 40%;
@@ -37,6 +40,8 @@
   border: none;
   background: #DFF6FF;
   padding: 5px;
+  border-radius: 5px;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.38));
 }
 .sign-up-button::before{
   content: '¿Aún no estas registrado?';
@@ -44,4 +49,55 @@
   font-size: 7px;
   color:#504F4F;
   transform: translate(-5px,-15px);
+}
+p{
+  margin: 15px 0;
+  color: white;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form{
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.38));
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #06283d;
+  gap: 5px;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+}
+.form-input{
+  margin:0px 0px;
+  width: 80%;
+  border-radius: 5px;
+  padding: 2%;
+}
+.btn{
+  background: #1363DF;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 7px;
+  margin:15px 0;
+}
+@media (min-width:768px) {
+  .sign-up-button::before{
+    font-size: 10px;
+    transform: translate(-15px,-35px);
+  }
+  .form-Log-In{
+    margin: 40px 0px;
+  }
+  .form-Log-In img {
+    width: 50%;
+    height: 50%;
+  }
+  .container{
+    width: 30%;
+    margin: 0,0,0,10px;
+
+  }
 }
