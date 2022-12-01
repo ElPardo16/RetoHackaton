@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+.form-Log-In {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.form-Log-In img {
+  margin-top: 5%;
+  width: 90%;
+}
+.container{
+  width: 100%;
+  margin:50px;
+  font-family: 'Roboto', sans-serif;
+}
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+}
+.log-in-button {
+  width: 40%;
+  color: white;
+  border: none;
+  background: #06283d;
+  padding: 5px;
+  filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.38));
+}
+.sign-up-button{
+  width: 40%;
+  color: black;
+  border: none;
+  background: #DFF6FF;
+  padding: 5px;
+}
+.sign-up-button::before{
+  content: '¿Aún no estas registrado?';
+  position: absolute;
+  font-size: 7px;
+  color:#504F4F;
+  transform: translate(-5px,-15px);
+}
