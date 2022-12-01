@@ -5,7 +5,7 @@ import Dashborad from './Dashborad';
 
 export default function App() {
   return (
-     <Dashborad/>
+     <Dashborad user="company"/>
   )
 }
 
