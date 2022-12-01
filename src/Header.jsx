@@ -1,13 +1,13 @@
 import "./Header.css"
 import {FaBars,FaUserAlt,FaBell} from 'react-icons/fa'
-function Header() {
+function Header({img}) {
   return (
     <nav className="navbar">
       <a href="#Home" className="logo">&#60;YT/&#62;</a>
       <ul className="nav-links">
         <input type="checkbox" id="checkbox_toggle" />
         <div className="BtnOpt">
-          <label className="userProfile">{<FaUserAlt />}</label>
+          <img src={img} alt="" />
           <label className="bell">{<FaBell />}</label>
           <label htmlFor="checkbox_toggle" className="hamburger">{<FaBars />}</label>
         </div>
