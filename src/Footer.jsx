@@ -8,10 +8,10 @@ function Footer() {
         <img src={logoFooter} alt="Logo de Young Talent" />
         <div>
           <div className='footer-social_media'>
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-square-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <i className="fa-brands fa-square-facebook"></i>
+            <i className="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-square-twitter"></i>
+            <i className="fa-brands fa-linkedin"></i>
           </div>
           <h4>© 2022 No Binarios</h4>
         </div>
