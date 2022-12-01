@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+import Card from './Card'
 import './App.css';
+import List from './List';
+import Dashborad from './Dashborad';
 
 export default function App() {
   return (
-     <h1>hola mundo</h1>
+     <Dashborad/>
   )
 }
-
 
