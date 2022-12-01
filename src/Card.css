@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, .6) 3px 3px 3px;
+    background: #dff6ff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 350px;
+}
+.card img{
+    width: 100px;
+}
+.card_con{
+    margin-left: 20px;
+}
+.n{
+    font-weight: bold;
+}
+p:not(:first-child){
+    font-size: .8rem;
+}

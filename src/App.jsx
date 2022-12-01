@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+import Card from './Card'
 import './App.css';
+import List from './List';
 
 export default function App() {
   return (
-     <h1>hola mundo</h1>
+     <List/>
   )
 }
 
