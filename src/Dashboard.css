@@ -13,16 +13,17 @@
 .dash_title {
   margin: 20px 0;
   text-transform: capitalize;
-  font-size: clamp(50px, 5vw, 80px);
+  font-size: clamp(50px, 5vw, 60px);
   font-weight: 700;
   text-align: center;
 }
 
 .vacancies_apply{
+  display: grid;
+  place-items: start;
   width: 80%;
-  height: clamp(150px, 15vw, 380px);
   margin: 35px auto;
-  padding: 20px;
+  padding: 20px 20px 70px;
   border-radius: 20px;
   box-shadow: 12px 12px 10px #dff6ff;
 }
@@ -52,14 +53,12 @@ div.photo:nth-of-type(3) {
 
 @media only screen and (min-width: 1000px) {
   .vacancies_apply {
-    position: relative;
+    place-items: center;
     margin: 60px auto;
+    padding: 70px 20px;
   }
   .vacancies_title {
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
   }
 }
