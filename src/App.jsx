@@ -1,13 +1,17 @@
 //import logo from './logo.svg';
 import './App.css';
 import Footer from './Footer';
+import Search from './Search';
+import Filter from './Filter';
 
 export default function App() {
   return (
     <>
-     <h1>hola mundo</h1>
-     <Footer/>
-    </> 
+      <div className='searchFilter'>
+      <Search/>
+      <Filter value1="Vacantes recomendadas" value2="Todas las vacantes"/></div>
+      <Footer/>
+      </>
   )
 }
 
