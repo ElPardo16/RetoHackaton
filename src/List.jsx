@@ -12,7 +12,7 @@ function List({user}) {
     setPeople(json.results)
   }
   useEffect(_ => {getData(url)},[])
-  if(user == "person"){
+  if(user == "company"){
     return (
       <main>
         {!people ? "Cargando..." : 

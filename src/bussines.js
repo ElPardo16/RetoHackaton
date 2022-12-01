@@ -4,7 +4,7 @@ export const bussines = [{
   img: "./img/laccenture.jpeg"  
 },
 {
-    name: "Desarrollador backend",
+    name: "Desarrollador Backend",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     img: "./img/lglobant.jpg"  
 },
@@ -12,4 +12,9 @@ export const bussines = [{
     name: "Desarollador SR",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     img: "./img/lpercient.jpg"  
+},
+{
+  name: "Desarollador Frontend",
+  des: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  img: "./img/laccenture.jpeg"  
 }]
