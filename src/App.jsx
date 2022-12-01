@@ -3,6 +3,9 @@ import './App.css';
 import List from './List';
 import Dashborad from './Dashborad';
 import Header from './Header'
+import Footer from './Footer';
+import Search from './Search';
+import Filter from './Filter';
 export default function App() {
   let dashPerson = <><Header/><Dashborad user="person" fun={() => {setComponetRender(listPerson)}}/></>
   let dashCompany = <><Header/><Dashborad user="company" fun={() => {setComponetRender(listCompany)}}/></>
@@ -14,8 +17,11 @@ export default function App() {
     //setComponetRender(<List user="person"/>)
   },[])
   return (
-      <>
-      {componetRender}
+    <>
+      <div className='searchFilter'>
+      <Search/>
+      <Filter value1="Vacantes recomendadas" value2="Todas las vacantes"/></div>
+      <Footer/>
       </>
   )
 }

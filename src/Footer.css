@@ -1,0 +1,33 @@
+footer{
+    background: #07293E;
+    color: white;
+    padding: 10px 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer img{
+    width: 80px;
+}
+footer div:first-of-type{
+    align-items: center;
+}
+footer h4{
+    margin: 5px;
+}
+.footer-social_media{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-social_media i{
+    font-size: 18px;
+    padding: 5px;
+}
+
+@media (min-width:768px) {
+    
+    .footer-social_media i{
+        font-size: 25px;
+        padding: 5px;
+    }
+}
