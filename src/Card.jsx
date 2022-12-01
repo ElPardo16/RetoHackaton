@@ -1,28 +1,44 @@
 import "./Card.css"
 
-function Card({type,title,description}) {
-
+function Card({type,title,description,img}) {
+    function randomSkill(){
+        let number = Math.floor(Math.random() * 3)
+        switch(number){
+            case 0:
+                return ["./img/lreact.png","./img/lnode.png","./img/laws.png"]
+            case 1:
+                return ["./img/lphp.png","./img/lsql.png"]
+            case 2:
+                return ["./img/langular.png","./img/lmongo.png"]
+        }
+    }
     if(type == "person"){
         return ( 
         <div className='card'>
-            <img src="https://img2.freepng.es/20180713/ig/kisspng-user-profile-linkedin-netwerk-money-order-fulfillm-round-face-5b4944092212b3.5336384915315282011396.jpg" alt="Imagen de perfil"/>
+            <img src={img} alt="Imagen de perfil"/>
             <div className="card_con">
                 <p className="n">{title}</p>
-                <p className="n">Edad: {description}</p>
+                <p>Edad: {description}</p>
                 <p className="n">Habilidades:</p>
-                <div className="skills"></div>
+                <div className="skills">{randomSkill().map((item, index) =>{
+                    return <img key={index} src={item} alt="icono" />
+                })}</div>
             </div>
         </div>
         )
     }else{
         return (
         <div className='card'>
-            <img src="" alt="Imagen de perfil" />
+            <img src={img} alt="Imagen de perfil" />
             <div className="card_con">
                 <p className="n">{title}</p>
-                <p>{description}</p>
+                <p className="des">{description}</p>
                 <p className="n">Habilidades:</p>
-                <div className="skills"></div>
+                <div className="skills">
+                {randomSkill().map((item, index) =>{
+                    return <img key={index} src={item} alt="icono" />
+                })}
+                </div>
             </div>
         </div>
         )

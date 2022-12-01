@@ -1,27 +1,47 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 .card{
-    padding: 20px;
+    margin: auto;
+    width: 100%;
+    padding: 15px 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, .6) 3px 3px 3px;
     background: #dff6ff;
+    display: grid;
+    grid: 1fr / 40% 60%;
+    margin-bottom: 20px;
+}
+.card > img{
+    border-radius: 50%;
+    place-self: center stretch;
+
+}
+.card_con{
+    padding-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+}
+.skills{
+    height: 40px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    max-width: 350px;
+    gap: 15px;
 }
-.card img{
-    width: 100px;
-}
-.card_con{
-    margin-left: 20px;
+.skills img{
+    height: 30px;
 }
 .n{
     font-weight: bold;
 }
-p:not(:first-child){
+.card .des{
     font-size: .8rem;
+}
+p:first-child{
+    font-size: 1.4rem;
+}
+p:not(:first-child){
+    font-size: 1.2rem;
 }
